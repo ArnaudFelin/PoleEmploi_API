@@ -18,4 +18,8 @@ In order the run the script you have to create a new python env and install the 
 
 You have to install also the sofware MariaDB and create an appropriate DB
 
-Copy all the files on your computer, activate your python env, select the path to the folder PoleEmploi_API\PoleEmploi_API and then run : scrapy crawl dataJobSearch
+Copy all the files on your computer, activate your python env, select the path to the folder PoleEmploi_API\PoleEmploi_API and then run : 
+
+```python
+scrapy crawl dataJobSearch
+```
