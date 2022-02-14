@@ -10,3 +10,12 @@ The advantage of Scrapy is that once you have mastered it a bit you can do the s
 
 Twice a month or so I run the scripts that get all of the announcements and store them in the Maria DB database.
 
+## Run the script
+
+In order the run the script you have to create a new python env and install the libraries :
+- Scrapy
+- mysql.connector
+
+You have to install also the sofware MariaDB and create an appropriate DB
+
+Copy all the files on your computer, activate your python env, select the path to the folder PoleEmploi_API\PoleEmploi_API and then run : scrapy crawl dataJobSearch
