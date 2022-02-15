@@ -93,9 +93,9 @@ class DatajobsearchSpider(scrapy.Spider):
         url = 'https://entreprise.pole-emploi.fr/connexion/oauth2/access_token?realm=%2Fpartenaire'
         headers = {'Content-Type': 'application/x-www-form-urlencoded'}
         datas = {'grant_type': 'client_credentials',
-        'client_id':'PAR_datajobsearch_553c8b452f8d302abafa8614d4dd04b792a31ca1c4f0797432e99de21981d043',
-        'client_secret':'a3b07264d2f0e48c3c20ca671d86639ed6d178a844d6fadc073ee4c289f3ce3e',
-        'scope':'api_offresdemploiv2 application_PAR_datajobsearch_553c8b452f8d302abafa8614d4dd04b792a31ca1c4f0797432e99de21981d043 o2dsoffre'
+        'client_id':'YOUR client_id',
+        'client_secret':'YOUR client_secret',
+        'scope':'YOUR scope'
         }
                 
         yield scrapy.FormRequest(url=url, headers=headers, formdata=datas, callback=self.get_limit_of_offers)
